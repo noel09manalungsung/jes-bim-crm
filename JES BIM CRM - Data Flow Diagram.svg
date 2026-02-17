@@ -1,0 +1,362 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 2100" font-family="Inter, Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ea580c"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-amber" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d97706"/>
+    </marker>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="2100" fill="#f8fafc" rx="12"/>
+
+  <!-- Title -->
+  <rect x="0" y="0" width="1200" height="70" fill="url(#headerGrad)" rx="12"/>
+  <rect x="0" y="40" width="1200" height="30" fill="url(#headerGrad)"/>
+  <text x="600" y="42" text-anchor="middle" fill="white" font-size="22" font-weight="700">JES BIM CRM — Data Flow Diagram (v1)</text>
+  <text x="600" y="62" text-anchor="middle" fill="#94a3b8" font-size="12">Marketing (Data Gatherers + Campaign Manager) → Sales (Outreach Escalation) → Deal Conversion</text>
+
+  <!-- ==================== MARKETING SECTION ==================== -->
+  <rect x="40" y="90" width="1120" height="790" rx="10" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="40" y="90" width="1120" height="32" rx="10" fill="#2563eb"/>
+  <rect x="40" y="110" width="1120" height="12" fill="#2563eb"/>
+  <text x="60" y="112" fill="white" font-size="13" font-weight="600">MARKETING TEAM</text>
+  <text x="1100" y="112" text-anchor="end" fill="#bfdbfe" font-size="11">2 Data Gatherers + 1 Campaign Manager</text>
+
+  <!-- Step 1: External Sources → Data Gatherers -->
+  <text x="270" y="148" text-anchor="middle" fill="#1e40af" font-size="12" font-weight="700">STEP 1: Lead Sourcing</text>
+
+  <!-- Apollo -->
+  <rect x="80" y="160" width="150" height="45" rx="8" fill="white" stroke="#94a3b8" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="155" y="180" text-anchor="middle" fill="#334155" font-size="12" font-weight="600">Apollo.io</text>
+  <text x="155" y="195" text-anchor="middle" fill="#64748b" font-size="9">CSV Export</text>
+
+  <!-- LinkedIn -->
+  <rect x="260" y="160" width="170" height="45" rx="8" fill="white" stroke="#94a3b8" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="345" y="180" text-anchor="middle" fill="#334155" font-size="12" font-weight="600">LinkedIn Sales Nav.</text>
+  <text x="345" y="195" text-anchor="middle" fill="#64748b" font-size="9">CSV Export</text>
+
+  <!-- Arrows to Data Gatherers -->
+  <line x1="155" y1="205" x2="155" y2="230" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <line x1="345" y1="205" x2="345" y2="230" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+
+  <!-- Data Gatherer 1 -->
+  <rect x="70" y="230" width="170" height="50" rx="8" fill="white" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="155" y="252" text-anchor="middle" fill="#1e40af" font-size="12" font-weight="700">Data Gatherer 1</text>
+  <text x="155" y="268" text-anchor="middle" fill="#3b82f6" font-size="10">Source, verify &amp; enrich</text>
+
+  <!-- Data Gatherer 2 -->
+  <rect x="260" y="230" width="170" height="50" rx="8" fill="white" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="345" y="252" text-anchor="middle" fill="#1e40af" font-size="12" font-weight="700">Data Gatherer 2</text>
+  <text x="345" y="268" text-anchor="middle" fill="#3b82f6" font-size="10">Source, verify &amp; enrich</text>
+
+  <!-- Step 2: Upload to Database -->
+  <line x1="155" y1="280" x2="155" y2="295" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="345" y1="280" x2="345" y2="295" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="155" y1="295" x2="250" y2="310" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="345" y1="295" x2="250" y2="310" stroke="#2563eb" stroke-width="1.5"/>
+
+  <text x="270" y="322" text-anchor="middle" fill="#1e40af" font-size="12" font-weight="700">STEP 2: Upload to Database</text>
+
+  <!-- Database -->
+  <rect x="120" y="335" width="300" height="55" rx="8" fill="white" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="270" y="358" text-anchor="middle" fill="#1e40af" font-size="14" font-weight="700">CRM DATABASE</text>
+  <text x="270" y="378" text-anchor="middle" fill="#3b82f6" font-size="10">Duplicate check by email → Create new or Update existing</text>
+
+  <!-- Step 3: Campaign Manager sees leads -->
+  <line x1="270" y1="390" x2="270" y2="420" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <text x="650" y="415" text-anchor="middle" fill="#1e40af" font-size="12" font-weight="700">STEP 3: Campaign Manager selects leads</text>
+
+  <!-- Campaign Manager -->
+  <rect x="480" y="425" width="340" height="55" rx="8" fill="white" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="650" y="448" text-anchor="middle" fill="#1e40af" font-size="13" font-weight="700">Campaign Manager</text>
+  <text x="650" y="466" text-anchor="middle" fill="#3b82f6" font-size="10">Sees new qualified leads → Selects which to target</text>
+
+  <!-- Arrow from database to campaign manager -->
+  <path d="M 420 362 L 480 452" fill="none" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <text x="430" y="400" fill="#3b82f6" font-size="9" font-weight="600">New leads visible</text>
+
+  <!-- Step 4: Auto-push to Instantly.ai -->
+  <line x1="650" y1="480" x2="650" y2="520" stroke="#d97706" stroke-width="2" marker-end="url(#arrow-amber)"/>
+  <text x="650" y="538" text-anchor="middle" fill="#92400e" font-size="12" font-weight="700">STEP 4: Auto-push via API</text>
+
+  <!-- Instantly.ai -->
+  <rect x="830" y="550" width="280" height="55" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+  <text x="970" y="573" text-anchor="middle" fill="#92400e" font-size="14" font-weight="700">Instantly.ai</text>
+  <text x="970" y="591" text-anchor="middle" fill="#a16207" font-size="10">Cold email campaigns run automatically</text>
+
+  <!-- Arrow from CM to Instantly -->
+  <path d="M 820 465 Q 870 510, 870 550" fill="none" stroke="#d97706" stroke-width="2" marker-end="url(#arrow-amber)"/>
+  <text x="880" y="518" fill="#92400e" font-size="9" font-weight="600">Selected leads</text>
+  <text x="880" y="530" fill="#92400e" font-size="9">pushed via API</text>
+
+  <!-- Step 5: Instantly.ai replies auto-sync back -->
+  <text x="420" y="540" text-anchor="middle" fill="#92400e" font-size="12" font-weight="700">STEP 5: Replies auto-sync back</text>
+
+  <!-- Arrow from Instantly back to Database -->
+  <path d="M 830 580 L 420 375" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrow-amber)"/>
+  <text x="640" y="500" fill="#92400e" font-size="9" transform="rotate(-18, 640, 500)">Auto-sync replies &amp; statuses</text>
+
+  <!-- STEP 6: AI Classification -->
+  <text x="270" y="618" text-anchor="middle" fill="#7c3aed" font-size="12" font-weight="700">STEP 6: AI Auto-Classification</text>
+
+  <!-- AI Engine box -->
+  <rect x="100" y="628" width="340" height="60" rx="8" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="100" y="628" width="8" height="60" rx="4" fill="#7c3aed"/>
+  <text x="280" y="650" text-anchor="middle" fill="#5b21b6" font-size="13" font-weight="700">AI Reads Email Reply</text>
+  <text x="280" y="666" text-anchor="middle" fill="#7c3aed" font-size="10">Extracts data (phone, emails, contacts) → Classifies lead</text>
+
+  <!-- Arrows from DB to AI -->
+  <line x1="270" y1="390" x2="270" y2="610" stroke="#475569" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="280" y="598" fill="#475569" font-size="9">Replies synced</text>
+
+  <!-- Three classification outputs -->
+  <!-- SQL -->
+  <line x1="180" y1="688" x2="180" y2="720" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+  <rect x="80" y="720" width="200" height="50" rx="6" fill="#16a34a" filter="url(#shadow)"/>
+  <text x="180" y="740" text-anchor="middle" fill="white" font-size="11" font-weight="700">SQL (Sales Qualified)</text>
+  <text x="180" y="755" text-anchor="middle" fill="#bbf7d0" font-size="9">Interested • Referred • BIM user • Not now</text>
+
+  <!-- MQL -->
+  <rect x="310" y="720" width="200" height="50" rx="6" fill="#d97706" filter="url(#shadow)"/>
+  <text x="410" y="740" text-anchor="middle" fill="white" font-size="11" font-weight="700">MQL (Marketing Qualified)</text>
+  <text x="410" y="755" text-anchor="middle" fill="#fef3c7" font-size="9">Not interested • OOO • Future potential</text>
+  <line x1="310" y1="688" x2="410" y2="720" stroke="#d97706" stroke-width="1.5" marker-end="url(#arrow-amber)"/>
+
+  <!-- Spam -->
+  <rect x="540" y="720" width="140" height="50" rx="6" fill="#94a3b8" filter="url(#shadow)"/>
+  <text x="610" y="740" text-anchor="middle" fill="white" font-size="11" font-weight="700">Spam</text>
+  <text x="610" y="755" text-anchor="middle" fill="#e2e8f0" font-size="9">Auto-reply • Nonsense</text>
+  <line x1="400" y1="688" x2="610" y2="720" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- No Reply (separate path, not from AI) -->
+  <rect x="720" y="628" width="160" height="40" rx="6" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="800" y="648" text-anchor="middle" fill="#854d0e" font-size="12" font-weight="600">No Reply</text>
+  <text x="800" y="661" text-anchor="middle" fill="#a16207" font-size="9">(auto after 15 days)</text>
+
+  <!-- SQL path: Auto-forward to Sales -->
+  <line x1="180" y1="770" x2="180" y2="810" stroke="#16a34a" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <rect x="80" y="810" width="200" height="42" rx="8" fill="#ea580c" filter="url(#shadow)"/>
+  <text x="180" y="828" text-anchor="middle" fill="white" font-size="11" font-weight="700">AUTO-FORWARD TO SALES</text>
+  <text x="180" y="843" text-anchor="middle" fill="#fed7aa" font-size="10">With AI-extracted data &amp; notes</text>
+
+  <!-- MQL path: Recycle -->
+  <line x1="410" y1="770" x2="410" y2="810" stroke="#d97706" stroke-width="1.5" marker-end="url(#arrow-amber)"/>
+  <rect x="310" y="810" width="200" height="42" rx="8" fill="#d97706" filter="url(#shadow)"/>
+  <text x="410" y="828" text-anchor="middle" fill="white" font-size="11" font-weight="700">RECYCLE (6 MONTHS)</text>
+  <text x="410" y="843" text-anchor="middle" fill="#fef3c7" font-size="10">Re-verify → Re-add to campaign</text>
+
+  <!-- MQL Recycle arrow back to Campaign Manager -->
+  <path d="M 510 831 Q 1130 831, 1130 500 Q 1130 430, 820 452" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="8,4" marker-end="url(#arrow-amber)"/>
+  <text x="1118" y="660" fill="#d97706" font-size="10" font-weight="600" transform="rotate(90, 1118, 660)">MQL re-verify &amp; re-campaign</text>
+
+  <!-- No Reply path: Auto-forward to Sales -->
+  <line x1="800" y1="668" x2="800" y2="810" stroke="#ea580c" stroke-width="2" marker-end="url(#arrow-orange)"/>
+  <rect x="700" y="810" width="200" height="42" rx="8" fill="#ea580c" filter="url(#shadow)"/>
+  <text x="800" y="828" text-anchor="middle" fill="white" font-size="11" font-weight="700">AUTO-FORWARD TO SALES</text>
+  <text x="800" y="843" text-anchor="middle" fill="#fed7aa" font-size="10">for Outreach Escalation</text>
+  <text x="810" y="740" fill="#ea580c" font-size="9" font-weight="600">15 days, no reply</text>
+
+  <!-- ==================== SALES SECTION ==================== -->
+  <rect x="40" y="900" width="1120" height="810" rx="10" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="40" y="900" width="1120" height="32" rx="10" fill="#16a34a"/>
+  <rect x="40" y="920" width="1120" height="12" fill="#16a34a"/>
+  <text x="60" y="922" fill="white" font-size="13" font-weight="600">SALES TEAM — Outreach Escalation</text>
+  <text x="1100" y="922" text-anchor="end" fill="#bbf7d0" font-size="11">3 users: 1 per market (ME, Dutch, German)</text>
+
+  <!-- Arrows from Marketing to Sales -->
+  <line x1="180" y1="852" x2="180" y2="900" stroke="#16a34a" stroke-width="2.5" marker-end="url(#arrow-green)"/>
+  <text x="195" y="885" fill="#16a34a" font-size="9" font-weight="600">SQL leads</text>
+  <line x1="800" y1="852" x2="800" y2="900" stroke="#ea580c" stroke-width="2.5" marker-end="url(#arrow-orange)"/>
+  <text x="815" y="885" fill="#ea580c" font-size="9" font-weight="600">No-reply leads</text>
+
+  <!-- STEP 1: LinkedIn Outreach -->
+  <text x="300" y="965" text-anchor="middle" fill="#166534" font-size="12" font-weight="700">ESCALATION STEP 1</text>
+
+  <rect x="140" y="975" width="320" height="60" rx="8" fill="white" stroke="#059669" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="140" y="975" width="8" height="60" rx="4" fill="#2563eb"/>
+  <text x="310" y="1000" text-anchor="middle" fill="#1e40af" font-size="14" font-weight="700">LinkedIn Outreach</text>
+  <text x="310" y="1020" text-anchor="middle" fill="#2563eb" font-size="10">Sales rep contacts lead via LinkedIn • 15 day window</text>
+
+  <!-- No reply arrow -->
+  <line x1="300" y1="1035" x2="300" y2="1075" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arrow-red)"/>
+  <text x="310" y="1060" fill="#dc2626" font-size="9" font-weight="600">No reply (15 days)</text>
+
+  <!-- Reply arrow to right -->
+  <line x1="460" y1="1005" x2="560" y2="1005" stroke="#16a34a" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <text x="510" y="998" fill="#16a34a" font-size="9" font-weight="600">Lead responds</text>
+
+  <!-- STEP 2: Cold Calling -->
+  <text x="300" y="1092" text-anchor="middle" fill="#166534" font-size="12" font-weight="700">ESCALATION STEP 2</text>
+
+  <rect x="140" y="1102" width="320" height="60" rx="8" fill="white" stroke="#059669" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="140" y="1102" width="8" height="60" rx="4" fill="#f59e0b"/>
+  <text x="310" y="1127" text-anchor="middle" fill="#92400e" font-size="14" font-weight="700">Cold Calling</text>
+  <text x="310" y="1147" text-anchor="middle" fill="#d97706" font-size="10">Sales rep calls the lead directly</text>
+
+  <!-- No reply arrow -->
+  <line x1="300" y1="1162" x2="300" y2="1202" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arrow-red)"/>
+  <text x="310" y="1188" fill="#dc2626" font-size="9" font-weight="600">No reply</text>
+
+  <!-- Reply arrow to right -->
+  <line x1="460" y1="1132" x2="560" y2="1132" stroke="#16a34a" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <text x="510" y="1125" fill="#16a34a" font-size="9" font-weight="600">Lead responds</text>
+
+  <!-- STEP 3: Cold Meeting -->
+  <text x="300" y="1218" text-anchor="middle" fill="#166534" font-size="12" font-weight="700">ESCALATION STEP 3</text>
+
+  <rect x="140" y="1228" width="320" height="65" rx="8" fill="white" stroke="#059669" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="140" y="1228" width="8" height="65" rx="4" fill="#dc2626"/>
+  <text x="310" y="1255" text-anchor="middle" fill="#991b1b" font-size="14" font-weight="700">Cold Meeting</text>
+  <text x="310" y="1275" text-anchor="middle" fill="#dc2626" font-size="10">Lead parked here for up to 6 months</text>
+
+  <!-- Reply arrow to right -->
+  <line x1="460" y1="1260" x2="560" y2="1260" stroke="#16a34a" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <text x="510" y="1253" fill="#16a34a" font-size="9" font-weight="600">Lead responds</text>
+
+  <!-- Recycle arrow back to Marketing -->
+  <line x1="300" y1="1293" x2="300" y2="1325" stroke="#ea580c" stroke-width="2" marker-end="url(#arrow-orange)"/>
+  <text x="310" y="1315" fill="#ea580c" font-size="9" font-weight="600">6 months, no response</text>
+
+  <rect x="170" y="1325" width="260" height="45" rx="8" fill="#ea580c" filter="url(#shadow)"/>
+  <text x="300" y="1345" text-anchor="middle" fill="white" font-size="11" font-weight="700">RECYCLE TO MARKETING</text>
+  <text x="300" y="1360" text-anchor="middle" fill="#fed7aa" font-size="10">Back to Data Gatherers for re-enrichment</text>
+
+  <!-- Recycle arrow back up to marketing zone -->
+  <path d="M 170 1347 Q 60 1347, 60 500 Q 60 200, 100 255" fill="none" stroke="#ea580c" stroke-width="2" stroke-dasharray="8,4" marker-end="url(#arrow-orange)"/>
+  <text x="72" y="750" fill="#ea580c" font-size="10" font-weight="600" transform="rotate(-90, 72, 750)">Recycle to Data Gatherers</text>
+
+  <!-- ==================== ENGAGED LEAD PATH (right side) ==================== -->
+  <!-- Hot/Warm/Engaged box -->
+  <rect x="560" y="970" width="280" height="55" rx="8" fill="white" stroke="#16a34a" stroke-width="2" filter="url(#shadow)"/>
+  <text x="700" y="992" text-anchor="middle" fill="#166534" font-size="13" font-weight="700">LEAD ENGAGED</text>
+  <text x="700" y="1010" text-anchor="middle" fill="#16a34a" font-size="10">Responded at any outreach step or SQL from AI</text>
+
+  <!-- Temperature boxes -->
+  <rect x="580" y="1050" width="100" height="36" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="630" y="1073" text-anchor="middle" fill="#991b1b" font-size="12" font-weight="700">HOT</text>
+
+  <rect x="700" y="1050" width="100" height="36" rx="6" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="750" y="1073" text-anchor="middle" fill="#854d0e" font-size="12" font-weight="700">WARM</text>
+
+  <line x1="700" y1="1025" x2="700" y2="1050" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+
+  <!-- Nurture -->
+  <line x1="700" y1="1086" x2="700" y2="1120" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="580" y="1120" width="240" height="45" rx="8" fill="white" stroke="#059669" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="700" y="1140" text-anchor="middle" fill="#166534" font-size="12" font-weight="700">Contact &amp; Nurture</text>
+  <text x="700" y="1156" text-anchor="middle" fill="#059669" font-size="10">Emails, calls, LinkedIn, follow-ups</text>
+
+  <!-- Meeting -->
+  <line x1="700" y1="1165" x2="700" y2="1195" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="580" y="1195" width="240" height="42" rx="8" fill="white" stroke="#059669" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="700" y="1214" text-anchor="middle" fill="#166534" font-size="12" font-weight="700">Schedule Meetings</text>
+  <text x="700" y="1228" text-anchor="middle" fill="#059669" font-size="10">Discovery, demo, follow-up + notes</text>
+
+  <!-- RFQ -->
+  <line x1="700" y1="1237" x2="700" y2="1265" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="580" y="1265" width="240" height="38" rx="8" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+  <text x="700" y="1289" text-anchor="middle" fill="#166534" font-size="12" font-weight="700">RFQ Received + Project Details</text>
+
+  <!-- Deal Conversion -->
+  <line x1="700" y1="1303" x2="700" y2="1335" stroke="#16a34a" stroke-width="2.5" marker-end="url(#arrow-green)"/>
+
+  <rect x="560" y="1335" width="280" height="65" rx="10" fill="#16a34a" filter="url(#shadow)"/>
+  <text x="700" y="1360" text-anchor="middle" fill="white" font-size="14" font-weight="700">CONVERT LEAD → DEAL</text>
+  <text x="700" y="1378" text-anchor="middle" fill="#bbf7d0" font-size="10">Organization • Contact(s) • RFQ Scope</text>
+  <text x="700" y="1392" text-anchor="middle" fill="#bbf7d0" font-size="10">Meeting Notes • Full Interaction History</text>
+
+  <!-- Future: Estimation -->
+  <line x1="700" y1="1400" x2="700" y2="1440" stroke="#475569" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arrow)"/>
+
+  <rect x="560" y="1440" width="280" height="40" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="8,4"/>
+  <text x="700" y="1458" text-anchor="middle" fill="#64748b" font-size="12" font-weight="600">ESTIMATION TEAM</text>
+  <text x="700" y="1472" text-anchor="middle" fill="#94a3b8" font-size="10">Future Phase</text>
+
+  <!-- ==================== ADMIN SECTION ==================== -->
+  <rect x="40" y="1740" width="540" height="240" rx="10" fill="#faf5ff" stroke="#c084fc" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="40" y="1740" width="540" height="32" rx="10" fill="#7c3aed"/>
+  <rect x="40" y="1760" width="540" height="12" fill="#7c3aed"/>
+  <text x="60" y="1762" fill="white" font-size="13" font-weight="600">ADMIN SETTINGS</text>
+
+  <text x="60" y="1800" fill="#5b21b6" font-size="11" font-weight="600">⏱ Configurable Timers</text>
+  <text x="60" y="1818" fill="#7c3aed" font-size="10">• No Reply auto-forward to Sales: 15 days (editable)</text>
+  <text x="60" y="1833" fill="#7c3aed" font-size="10">• LinkedIn Outreach window: 15 days (editable)</text>
+  <text x="60" y="1848" fill="#7c3aed" font-size="10">• Cold Meeting recycling: 6 months (editable)</text>
+  <text x="60" y="1863" fill="#7c3aed" font-size="10">• MQL recycling: 6 months (re-verify → re-campaign)</text>
+
+  <text x="60" y="1888" fill="#5b21b6" font-size="11" font-weight="600">⚙ Due Date Rules (Sales Leads)</text>
+  <text x="60" y="1906" fill="#7c3aed" font-size="10">• Hot: 3 days • Warm: 7 days • Cold: 14 days (all editable)</text>
+
+  <text x="60" y="1931" fill="#5b21b6" font-size="11" font-weight="600">👥 User, Market &amp; Status Management</text>
+  <text x="60" y="1949" fill="#7c3aed" font-size="10">• Create/deactivate users, assign roles &amp; markets</text>
+  <text x="60" y="1964" fill="#7c3aed" font-size="10">• Markets: Middle East (UAE, KSA), Dutch, German</text>
+  <text x="60" y="1979" fill="#7c3aed" font-size="10">• Enable/disable statuses per team</text>
+
+  <!-- ==================== INSTANTLY.AI + AI CLASSIFICATION DETAIL ==================== -->
+  <rect x="620" y="1740" width="540" height="240" rx="10" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="620" y="1740" width="540" height="32" rx="10" fill="#d97706"/>
+  <rect x="620" y="1760" width="540" height="12" fill="#d97706"/>
+  <text x="640" y="1762" fill="white" font-size="13" font-weight="600">INSTANTLY.AI + AI CLASSIFICATION</text>
+
+  <text x="640" y="1800" fill="#92400e" font-size="11" font-weight="600">→ CRM pushes TO Instantly.ai:</text>
+  <text x="640" y="1818" fill="#a16207" font-size="10">• Campaign Manager selects leads → auto-pushed via API</text>
+
+  <text x="640" y="1843" fill="#92400e" font-size="11" font-weight="600">← Instantly.ai syncs BACK to CRM:</text>
+  <text x="640" y="1861" fill="#a16207" font-size="10">• Replies, bounces, sent confirmations</text>
+
+  <text x="640" y="1886" fill="#5b21b6" font-size="11" font-weight="600">🤖 AI Auto-Classification of Replies:</text>
+  <text x="640" y="1904" fill="#7c3aed" font-size="10">• Reads email → Extracts phone, emails, contacts, details</text>
+  <text x="640" y="1919" fill="#16a34a" font-size="10">• SQL: Interested, referred, BIM user, "not now"</text>
+  <text x="640" y="1934" fill="#d97706" font-size="10">• MQL: Not interested, OOO, future potential</text>
+  <text x="640" y="1949" fill="#64748b" font-size="10">• Spam: Auto-reply (no info), nonsense</text>
+  <text x="640" y="1968" fill="#a16207" font-size="10">• Campaign Manager can override any classification</text>
+
+  <!-- ==================== LEGEND ==================== -->
+  <rect x="40" y="1990" width="1120" height="20" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="60" y="2004" fill="#475569" font-size="10" font-weight="700">LEGEND:</text>
+
+  <line x1="130" y1="2000" x2="160" y2="2000" stroke="#2563eb" stroke-width="2"/>
+  <text x="168" y="2004" fill="#475569" font-size="9">Marketing flow</text>
+
+  <line x1="280" y1="2000" x2="310" y2="2000" stroke="#16a34a" stroke-width="2"/>
+  <text x="318" y="2004" fill="#475569" font-size="9">SQL / Lead engaged</text>
+
+  <line x1="430" y1="2000" x2="460" y2="2000" stroke="#ea580c" stroke-width="2"/>
+  <text x="468" y="2004" fill="#475569" font-size="9">Auto-forward / Recycle</text>
+
+  <line x1="600" y1="2000" x2="630" y2="2000" stroke="#d97706" stroke-width="2"/>
+  <text x="638" y="2004" fill="#475569" font-size="9">Instantly.ai / MQL</text>
+
+  <line x1="740" y1="2000" x2="770" y2="2000" stroke="#7c3aed" stroke-width="2"/>
+  <text x="778" y="2004" fill="#475569" font-size="9">AI Classification</text>
+
+  <line x1="890" y1="2000" x2="920" y2="2000" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="928" y="2004" fill="#475569" font-size="9">No reply escalation</text>
+
+  <line x1="1040" y1="2000" x2="1070" y2="2000" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="1078" y="2004" fill="#475569" font-size="9">Future</text>
+</svg>
