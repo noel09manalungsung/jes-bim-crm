@@ -3,6 +3,7 @@
 **Project:** JES BIM Customer Relationship Management System
 **Company:** Joseph Engineering Services (JES BIM)
 **Version:** 1.0
+**Test:** This is a test comment to verify GitHub sync is working.
 **Date:** February 17, 2026
 
 ---
